@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Google Fonts：「Noto Serif Japanese」Regular、Bold の表示例</title>
+  <style>
+  /* common */
+  section { font-family: sans-serif; padding: 0 20px 50px; }
+  h1 { font-size: 26px; color: #666; }
+  h2 { font-size: 20px; color: #666; border-left: solid 3px #666; padding-left: 10px; background-color: #eee; }
+  p { font-size: 22px; margin: 0 0 20px 0; }
+  .annotation p { font-size: 14px; margin: 0 0 5px 0; }
+  .note { font-size: 14px; line-height: 1.5; }
+  mark { background-color: #fee; }
+
+  /* Google Fonts */
+  @font-face {
+    font-family: 'Noto Serif Japanese';
+    font-style: normal;
+    font-weight: 400;
+    src: url(fonts/NotoSerifCJKjp/NotoSerifCJKjp-Regular.otf) format('opentype');
+    font-display: swap;
+   }
+  @font-face {
+     font-family: 'Noto Serif Japanese';
+     font-style: normal;
+     font-weight: 700;
+    src: url(fonts/NotoSerifCJKjp/NotoSerifCJKjp-Bold.otf) format('opentype');
+    font-display: swap;
+   }
+
+  .wf-notoserifjp { font-family: "Noto Serif Japanese", serif, san-serif; }
+  .regular { font-weight: 400; }
+  .bold { font-weight: 700; }
+
+  </style>
+</head>
+
+
+<body>
+<section>
+  <h1>●「Noto Serif Japanese」Regular、Bold の表示例</h1>
+  <div class="annotation">
+  <p>上から順に、以下のように設定しています。<br>
+  ・Regular（font-weight: 400;）<br>
+  ・Bold（font-weight: 700;）</p>
+  </div>
+</section>
+
+<section>
+  <h2>Noto Serif Japanese</h2>
+  <p class="wf-notoserifjp regular">吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。</p>
+  <p class="wf-notoserifjp bold">吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。</p>
+</section>
+
+</body>
+</html>
